@@ -6,7 +6,6 @@ edition = "2024"
 [workspace]
 members = [
     ".",
-    "nanocamelid",
     "camelid",
     "control-center/src-tauri",
 ]

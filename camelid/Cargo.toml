@@ -2,7 +2,7 @@
 name = "camelid"
 version = "0.1.0"
 edition = "2024"
-description = "Camelid Pi: local GGUF inference HTTP server powered by nanocamelid"
+description = "Camelid Pi: local GGUF inference HTTP server powered by embedded nanocamelid engine"
 license = "MIT"
 
 [dependencies]
@@ -14,8 +14,8 @@ serde_json = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal"] }
 tower-http = { version = "0.5", features = ["cors"] }
 core_affinity = "0.8"
+memmap2 = "0.9"
 rayon = "1"
-nanocamelid = { path = "../nanocamelid" }
 
 [[bin]]
 name = "camelid"

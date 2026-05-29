@@ -9,8 +9,15 @@ use axum::{
 };
 use serde::{Deserialize, Serialize};
 use tower_http::cors::CorsLayer;
+mod cluster;
+mod gguf;
+mod inference;
+mod model;
+mod q8;
+mod speculative;
+mod tokenizer;
 
-use nanocamelid::{gguf, inference, model, q8, tokenizer};
+
 
 const CONTEXT_LIMIT_ENV: &str = "NANOCAMELID_CONTEXT_LIMIT";
 const PREFILL_BATCH_ENV: &str = "NANOCAMELID_PREFILL_BATCH";

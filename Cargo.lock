@@ -506,7 +506,7 @@ dependencies = [
  "axum",
  "clap",
  "core_affinity",
- "nanocamelid",
+ "memmap2",
  "rayon",
  "serde",
  "serde_json",
@@ -2526,15 +2526,6 @@ dependencies = [
  "serde",
  "thiserror 2.0.18",
  "windows-sys 0.61.2",
-]
-
-[[package]]
-name = "nanocamelid"
-version = "0.1.0"
-dependencies = [
- "core_affinity",
- "memmap2",
- "rayon",
 ]
 
 [[package]]
